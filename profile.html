@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+
+    <title>Particip' Avenir, facilitateur de projets responsables</title>
+  </head>
+    <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+                    <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Nos prestations</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Nos formations</a>
+                            </li>
+                                    <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                              Ressources
+                                            </a>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item" href="#">Repères</a>
+                                              <a class="dropdown-item" href="#">Espace conseil</a>
+                                              <a class="dropdown-item" href="#">Appels à projets</a>
+                                              <a class="dropdown-item" href="#">Ressources pédagogiques</a>
+                                            </div>
+                                          </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Qui sommes-nous?</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Mentions légales</a>
+                            </li>
+                          </ul>    
+            </nav>
+        <div class="d-flex justify-content-center m-5">
+            <img src="image/logo.png" alt="logo">
+        </div>
+        <div class="d-flex justify-content-center m-5 title">
+            <h3>Management des organisations et des projets pour l'environnement</h3>
+        </div>
+        <hr>
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                
+                <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                        <label>
+                          First Name:
+                          <input type="text" formControlName="firstName" required>
+                        </label>
+                      
+                        <label>
+                          Last Name:
+                          <input type="text" formControlName="lastName" required>
+                        </label>
+                      
+                        <div formGroupName="address" required>
+                          <h3>Address</h3>
+                      
+                          <label>
+                            Street:
+                            <input type="text" formControlName="street" required>
+                          </label>
+                      
+                          <label>
+                            City:
+                            <input type="text" formControlName="city" required>
+                          </label>
+                          
+                          <label>
+                            State:
+                            <input type="text" formControlName="state" required>
+                          </label>
+                      
+                          <label>
+                            Zip Code:
+                            <input type="text" formControlName="zip" required>
+                          </label>
+                        </div>
+                      
+                        
+                      
+                        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+                      </form>
+                      
+                      <hr>
+                      
+                      
+                    </div> 
+                    
+        </div>
+        <div class="m-5">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="container">
+                <!-- Div logoSocial contenant les différents logos -->
+                  <div class="logoSocial">
+                    <p>Follow us</p>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                  </div>
+                  <!-- Div information contenant les conditions concernant l'alcool et les droits réservés -->
+                  <div class="information">
+                    <p class="titreCondition">© 2019 Particip' Avenir EIRL - All rights reserved</p>
+                    <p class="condition"> *Foucault Thierry; TEL: 06 13 50 12 48; 4 rue de la Prédecelle-91410 Dourdan; SIRET 75093582700014 </p>
+                  </div>
+                </div>
+            </div>
